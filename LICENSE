@@ -1,21 +1,77 @@
-MIT License
+# LICENCIA DUAL
 
-Copyright (c) 2025 plaxcito
+## [NOMBRE DEL SOFTWARE] v[VERSIÓN]
+**Copyright (c) [AÑO] [TU NOMBRE/EMPRESA]**
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+---
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## OPCIÓN 1: LICENCIA GRATUITA (No Comercial)
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### Permisos Gratuitos
+Se otorga permiso gratuito para usar, copiar, modificar y distribuir este software bajo las siguientes condiciones:
+
+**USOS PERMITIDOS SIN COSTO:**
+- Uso personal y educativo
+- Proyectos de código abierto (open source)
+- Investigación académica
+- Organizaciones sin fines de lucro
+- Evaluación y pruebas (máximo 30 días)
+
+**RESTRICCIONES:**
+- ❌ **NO se permite uso comercial** sin licencia comercial
+- ❌ **NO se permite venta** del software o productos derivados
+- ❌ **NO se permite** uso en productos o servicios que generen ingresos
+
+### Obligaciones
+- Incluir este aviso de copyright en todas las copias
+- Mencionar claramente que se usa bajo licencia no comercial
+- No eliminar marcas comerciales o avisos de propiedad
+
+---
+
+## OPCIÓN 2: LICENCIA COMERCIAL
+
+### Para Uso Comercial
+Si deseas usar este software para:
+- Desarrollo de productos comerciales
+- Servicios que generen ingresos
+- Integración en software propietario
+- Distribución comercial
+
+**DEBES ADQUIRIR UNA LICENCIA COMERCIAL**
+
+### Contacto para Licencia Comercial
+- **Email:** [tu-email@ejemplo.com]
+- **Sitio web:** [tu-sitio-web.com]
+- **Tarifas:** Contactar para cotización personalizada
+
+### Beneficios de la Licencia Comercial
+- ✅ Uso sin restricciones comerciales
+- ✅ Soporte técnico incluido
+- ✅ Actualizaciones prioritarias
+- ✅ Posibilidad de personalización
+- ✅ Sin obligación de mencionar licencia en producto final
+
+---
+
+## TÉRMINOS GENERALES
+
+### Definiciones
+- **Uso Comercial:** Cualquier uso que directa o indirectamente genere ingresos, incluyendo pero no limitado a: venta de software, servicios SaaS, productos comerciales, consultoría empresarial.
+- **Open Source:** Proyectos con código fuente público bajo licencias OSI aprobadas.
+
+### Garantías y Responsabilidades
+EL SOFTWARE SE PROPORCIONA "TAL COMO ESTÁ", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A LAS GARANTÍAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN.
+
+EN NINGÚN CASO LOS AUTORES O TITULARES DE LOS DERECHOS DE AUTOR SERÁN RESPONSABLES DE CUALQUIER RECLAMACIÓN, DAÑO U OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO O DE OTRA MANERA, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U OTROS TRATOS EN EL SOFTWARE.
+
+### Aplicación
+Esta licencia se rige por las leyes de [TU PAÍS/JURISDICCIÓN]. Cualquier disputa se resolverá en los tribunales de [TU CIUDAD/JURISDICCIÓN].
+
+### Validez
+Si alguna parte de esta licencia se considera inválida, el resto permanece en vigor.
+
+---
+
+**Para usar este software comercialmente, contacta para obtener una licencia comercial.**
+**Para uso no comercial, puedes usar este software bajo los términos de la Opción 1.**
