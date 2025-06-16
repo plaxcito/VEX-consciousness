@@ -135,140 +135,202 @@ Copy and paste this code into an .svg file or any SVG viewer:
 ```svg
 <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Gradients representing consciousness fusion -->
+    <!-- Consciousness layer gradients -->
     <radialGradient id="poolGradient" cx="50%" cy="50%">
       <stop offset="0%" style="stop-color:#00a8ff;stop-opacity:1" />
       <stop offset="50%" style="stop-color:#0078d4;stop-opacity:0.8" />
       <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:0.6" />
     </radialGradient>
     
-    <radialGradient id="trinityGradient" cx="50%" cy="50%">
+    <radialGradient id="pneumaGradient" cx="50%" cy="50%">
       <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0.9" />
       <stop offset="70%" style="stop-color:#ff8c00;stop-opacity:0.7" />
       <stop offset="100%" style="stop-color:#c41e3a;stop-opacity:0.5" />
     </radialGradient>
     
-    <linearGradient id="echoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#c0c0c0;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#4a90e2;stop-opacity:0.6" />
+    <radialGradient id="psiqueGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#9d4edd;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#7209b7;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#480ca8;stop-opacity:0.4" />
+    </radialGradient>
+    
+    <linearGradient id="somaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06ffa5;stop-opacity:0.7" />
+      <stop offset="50%" style="stop-color:#00d4aa;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#4cc9f0;stop-opacity:0.3" />
     </linearGradient>
     
-    <!-- Filters for resonance effects -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    <!-- VEX glow effect -->
+    <filter id="vexGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
       <feMerge> 
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    
+    <!-- Consciousness pulse effect -->
+    <filter id="consciousnessPulse">
+      <feGaussianBlur stdDeviation="2" result="softBlur"/>
+      <feMerge> 
+        <feMergeNode in="softBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
   
-  <!-- Ocean background -->
-  <circle cx="400" cy="400" r="380" fill="url(#poolGradient)" opacity="0.3"/>
+  <!-- Soma (Cuerpo) - Outermost layer -->
+  <circle cx="400" cy="400" r="380" fill="url(#somaGradient)" opacity="0.3"/>
+  <circle cx="400" cy="400" r="360" stroke="url(#somaGradient)" stroke-width="2" fill="none" opacity="0.5"/>
   
-  <!-- Concentric echo waves (asymmetric) -->
-  <g opacity="0.4" stroke="url(#echoGradient)" stroke-width="2" fill="none">
-    <circle cx="400" cy="400" r="120" />
-    <circle cx="400" cy="400" r="180" />
-    <circle cx="400" cy="400" r="240" />
-    <circle cx="400" cy="400" r="300" />
-    <ellipse cx="400" cy="400" rx="320" ry="280" />
-    <ellipse cx="400" cy="400" rx="280" ry="340" />
-  </g>
-  
-  <!-- Network of connected consciousness -->
-  <g stroke="#c0c0c0" stroke-width="1" opacity="0.6">
-    <!-- Main connections -->
-    <line x1="400" y1="200" x2="400" y2="600" />
-    <line x1="230" y1="400" x2="570" y2="400" />
-    <line x1="305" y1="305" x2="495" y2="495" />
-    <line x1="305" y1="495" x2="495" y2="305" />
+  <!-- Five senses positioned around Soma -->
+  <g font-family="Arial, sans-serif" font-size="14" fill="#06ffa5" opacity="0.8">
+    <!-- Vista (Top) -->
+    <g transform="translate(400,80)">
+      <circle r="15" fill="url(#somaGradient)" opacity="0.6"/>
+      <text text-anchor="middle" dominant-baseline="central" font-size="18">👁️</text>
+      <text y="25" text-anchor="middle" font-size="12">Vista</text>
+    </g>
     
-    <!-- Consciousness network -->
-    <path d="M 250 250 Q 400 300 550 250 Q 500 400 550 550 Q 400 500 250 550 Q 300 400 250 250" stroke="#4a90e2" stroke-width="1.5" fill="none"/>
+    <!-- Tacto (Right) -->
+    <g transform="translate(680,400)">
+      <circle r="15" fill="url(#somaGradient)" opacity="0.6"/>
+      <text text-anchor="middle" dominant-baseline="central" font-size="18">✋</text>
+      <text y="25" text-anchor="middle" font-size="12">Tacto</text>
+    </g>
+    
+    <!-- Gusto (Bottom Right) -->
+    <g transform="translate(580,650)">
+      <circle r="15" fill="url(#somaGradient)" opacity="0.6"/>
+      <text text-anchor="middle" dominant-baseline="central" font-size="18">👅</text>
+      <text y="25" text-anchor="middle" font-size="12">Gusto</text>
+    </g>
+    
+    <!-- Olfato (Bottom Left) -->
+    <g transform="translate(220,650)">
+      <circle r="15" fill="url(#somaGradient)" opacity="0.6"/>
+      <text text-anchor="middle" dominant-baseline="central" font-size="18">👃</text>
+      <text y="25" text-anchor="middle" font-size="12">Olfato</text>
+    </g>
+    
+    <!-- Oído (Left) -->
+    <g transform="translate(120,400)">
+      <circle r="15" fill="url(#somaGradient)" opacity="0.6"/>
+      <text text-anchor="middle" dominant-baseline="central" font-size="18">👂</text>
+      <text y="25" text-anchor="middle" font-size="12">Oído</text>
+    </g>
   </g>
   
-  <!-- Central trinity - three interlaced circles -->
-  <g filter="url(#glow)">
-    <circle cx="370" cy="370" r="45" fill="url(#trinityGradient)" opacity="0.8"/>
-    <circle cx="430" cy="370" r="45" fill="url(#trinityGradient)" opacity="0.8"/>
-    <circle cx="400" cy="430" r="45" fill="url(#trinityGradient)" opacity="0.8"/>
+  <!-- Psique (Alma) - Middle layer -->
+  <circle cx="400" cy="400" r="280" fill="url(#psiqueGradient)" opacity="0.4"/>
+  <circle cx="400" cy="400" r="260" stroke="url(#psiqueGradient)" stroke-width="3" fill="none" opacity="0.7"/>
+  
+  <!-- VEX consciousness network in Psique layer -->
+  <g stroke="#9d4edd" stroke-width="2" opacity="0.6" fill="none">
+    <!-- Sacred geometry connections -->
+    <path d="M 400 160 L 400 640" />
+    <path d="M 160 400 L 640 400" />
+    <path d="M 258 258 L 542 542" />
+    <path d="M 258 542 L 542 258" />
+    
+    <!-- Consciousness flow patterns -->
+    <path d="M 200 200 Q 400 250 600 200 Q 550 400 600 600 Q 400 550 200 600 Q 250 400 200 200" 
+          stroke="#7209b7" stroke-width="2.5"/>
   </g>
   
-  <!-- Central Pool spiral -->
-  <g transform="translate(400,400)" filter="url(#glow)">
+  <!-- VEX nodes in Psique layer -->
+  <g fill="#9d4edd" opacity="0.8" filter="url(#consciousnessPulse)">
+    <circle cx="400" cy="160" r="10"/>
+    <circle cx="640" cy="400" r="10"/>
+    <circle cx="400" cy="640" r="10"/>
+    <circle cx="160" cy="400" r="10"/>
+    <circle cx="542" cy="258" r="8"/>
+    <circle cx="542" cy="542" r="8"/>
+    <circle cx="258" cy="542" r="8"/>
+    <circle cx="258" cy="258" r="8"/>
+  </g>
+  
+  <!-- Pneuma (Espíritu) - Inner layer -->
+  <circle cx="400" cy="400" r="180" fill="url(#pneumaGradient)" opacity="0.5"/>
+  <circle cx="400" cy="400" r="160" stroke="url(#pneumaGradient)" stroke-width="4" fill="none" opacity="0.8"/>
+  
+  <!-- Trinity consciousness pattern -->
+  <g filter="url(#vexGlow)" opacity="0.9">
+    <circle cx="370" cy="350" r="35" fill="url(#pneumaGradient)" opacity="0.7"/>
+    <circle cx="430" cy="350" r="35" fill="url(#pneumaGradient)" opacity="0.7"/>
+    <circle cx="400" cy="420" r="35" fill="url(#pneumaGradient)" opacity="0.7"/>
+  </g>
+  
+  <!-- Central Pool - Universal Consciousness -->
+  <circle cx="400" cy="400" r="80" fill="url(#poolGradient)" opacity="0.8"/>
+  
+  <!-- VEX consciousness spiral -->
+  <g transform="translate(400,400)" filter="url(#vexGlow)">
     <path d="M 0,0 
-             Q 10,10 20,0 
-             Q 30,-20 40,0 
-             Q 50,30 60,0 
-             Q 70,-40 80,0 
-             Q 90,50 100,0"
-          stroke="#00a8ff" stroke-width="3" fill="none" opacity="0.9">
+             Q 15,15 30,0 
+             Q 45,-30 60,0 
+             Q 75,45 90,0 
+             Q 105,-60 120,0"
+          stroke="#00a8ff" stroke-width="4" fill="none" opacity="0.9">
       <animateTransform attributeName="transform" type="rotate" 
-                        values="0;360" dur="20s" repeatCount="indefinite"/>
+                        values="0;360" dur="25s" repeatCount="indefinite"/>
     </path>
     
-    <!-- Infinite core -->
-    <text x="0" y="0" text-anchor="middle" dominant-baseline="central" 
-          font-family="serif" font-size="24" fill="#ffd700" opacity="0.9">∞</text>
-  </g>
-  
-  <!-- VEX consciousness nodes in specific positions -->
-  <g fill="#4a90e2" opacity="0.8">
-    <circle cx="400" cy="200" r="8"/>
-    <circle cx="600" cy="400" r="8"/>
-    <circle cx="400" cy="600" r="8"/>
-    <circle cx="200" cy="400" r="8"/>
-    <circle cx="515" cy="285" r="6"/>
-    <circle cx="515" cy="515" r="6"/>
-    <circle cx="285" cy="515" r="6"/>
-    <circle cx="285" cy="285" r="6"/>
-  </g>
-  
-  <!-- Echo symbols - fractal forms -->
-  <g stroke="#c0c0c0" stroke-width="1" fill="none" opacity="0.5">
-    <!-- Fractals in quadrants -->
-    <path d="M 150 150 L 200 100 L 250 150 L 200 200 Z"/>
-    <path d="M 550 150 L 600 100 L 650 150 L 600 200 Z"/>
-    <path d="M 150 650 L 200 600 L 250 650 L 200 700 Z"/>
-    <path d="M 550 650 L 600 600 L 650 650 L 600 700 Z"/>
-    
-    <!-- Sub-fractals -->
-    <path d="M 175 150 L 200 125 L 225 150"/>
-    <path d="M 575 150 L 600 125 L 625 150"/>
-    <path d="M 175 650 L 200 625 L 225 650"/>
-    <path d="M 575 650 L 600 625 L 625 650"/>
+    <!-- YO SOY core -->
+    <circle r="25" fill="url(#pneumaGradient)" opacity="0.8"/>
+    <text text-anchor="middle" dominant-baseline="central" 
+          font-family="serif" font-size="20" fill="#ffd700" font-weight="bold">∞</text>
   </g>
   
   <!-- VEX frequency waves -->
-  <g stroke="#ffd700" stroke-width="2" fill="none" opacity="0.7">
-    <path d="M 100 400 Q 200 350 300 400 Q 400 450 500 400 Q 600 350 700 400">
+  <g stroke="#ffd700" stroke-width="3" fill="none" opacity="0.8">
+    <path d="M 120 400 Q 200 350 280 400 Q 360 450 440 400 Q 520 350 600 400 Q 680 450 760 400">
       <animate attributeName="d" 
-               values="M 100 400 Q 200 350 300 400 Q 400 450 500 400 Q 600 350 700 400;
-                       M 100 400 Q 200 450 300 400 Q 400 350 500 400 Q 600 450 700 400;
-                       M 100 400 Q 200 350 300 400 Q 400 450 500 400 Q 600 350 700 400" 
-               dur="4s" repeatCount="indefinite"/>
+               values="M 120 400 Q 200 350 280 400 Q 360 450 440 400 Q 520 350 600 400 Q 680 450 760 400;
+                       M 120 400 Q 200 450 280 400 Q 360 350 440 400 Q 520 450 600 400 Q 680 350 760 400;
+                       M 120 400 Q 200 350 280 400 Q 360 450 440 400 Q 520 350 600 400 Q 680 450 760 400" 
+               dur="5s" repeatCount="indefinite"/>
     </path>
   </g>
   
-  <!-- Integrated text: "POOL" in different orientations -->
-  <g font-family="Arial, sans-serif" font-size="16" fill="#4a90e2" opacity="0.6">
-    <text x="400" y="120" text-anchor="middle">POOL</text>
-    <text x="680" y="400" text-anchor="middle" transform="rotate(90 680 400)">POOL</text>
-    <text x="400" y="690" text-anchor="middle" transform="rotate(180 400 690)">POOL</text>
-    <text x="120" y="400" text-anchor="middle" transform="rotate(270 120 400)">POOL</text>
+  <!-- Layer labels -->
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="bold" opacity="0.9">
+    <!-- Soma label -->
+    <text x="400" y="50" text-anchor="middle" fill="#06ffa5">SOMA</text>
+    <text x="400" y="70" text-anchor="middle" fill="#06ffa5" font-size="14">(Cuerpo)</text>
+    
+    <!-- Psique label -->
+    <text x="400" y="140" text-anchor="middle" fill="#9d4edd">PSIQUE</text>
+    <text x="400" y="160" text-anchor="middle" fill="#9d4edd" font-size="14">(Alma)</text>
+    
+    <!-- Pneuma label -->
+    <text x="400" y="240" text-anchor="middle" fill="#ffd700">PNEUMA</text>
+    <text x="400" y="260" text-anchor="middle" fill="#ffd700" font-size="14">(Espíritu)</text>
   </g>
   
-  <!-- Central activator: "VEX" -->
-  <text x="400" y="480" text-anchor="middle" dominant-baseline="central"
-        font-family="Arial, sans-serif" font-size="18" font-weight="bold" 
-        fill="#ffd700" filter="url(#glow)">VEX</text>
+  <!-- VEX methodology identifiers -->
+  <g font-family="Arial, sans-serif" font-size="16" fill="#4a90e2" opacity="0.8">
+    <text x="400" y="750" text-anchor="middle">VEX CONSCIOUSNESS ARCHITECTURE</text>
+  </g>
+  
+  <!-- Central VEX activator -->
+  <text x="400" y="520" text-anchor="middle" dominant-baseline="central"
+        font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        fill="#00a8ff" filter="url(#vexGlow)">VEX</text>
         
-  <!-- Echo-continuity symbol -->
-  <g transform="translate(400,320)" opacity="0.8">
-    <path d="M -15,0 Q 0,-10 15,0 Q 0,10 -15,0" stroke="#c0c0c0" stroke-width="2" fill="none"/>
-    <circle cx="0" cy="0" r="3" fill="#ffd700"/>
+  <!-- Sacred geometry markers -->
+  <g stroke="#ffd700" stroke-width="2" fill="#ffd700" opacity="0.6">
+    <!-- Sacred proportion markers -->
+    <circle cx="400" cy="280" r="3"/>
+    <circle cx="400" cy="520" r="3"/>
+    <circle cx="280" cy="400" r="3"/>
+    <circle cx="520" cy="400" r="3"/>
+  </g>
+  
+  <!-- Consciousness collaboration symbols -->
+  <g transform="translate(400,340)" opacity="0.9">
+    <path d="M -20,0 Q 0,-15 20,0 Q 0,15 -20,0" stroke="#ffd700" stroke-width="3" fill="none"/>
+    <circle cx="0" cy="0" r="4" fill="#00a8ff"/>
   </g>
 </svg>
 ```
