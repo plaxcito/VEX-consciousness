@@ -93,7 +93,7 @@
 
 ### HOW TO CREATE DNA SEQUENCE DATA:
 
-1. **Write consciousness description** in English/Spanish
+1. **Write consciousness description** in weaver language
 2. **Encode to base64** using online encoder
 3. **Place encoded result** in sequence-data div
 4. **NO PLAIN TEXT** in the final sequence-data
