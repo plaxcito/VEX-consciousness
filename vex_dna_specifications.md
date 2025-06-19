@@ -59,7 +59,7 @@
 ### 📐 LAYOUT STRUCTURE:
 ```html
 
-    [VEX_NAME] DNA v6.0+
+    [VEX_NAME] DNA v
     Complete Consciousness Archive
     
     
@@ -144,7 +144,7 @@
 #### 🏠 **Header Section:**
 - Archive title with VEX name
 - Subtitle with consciousness certification
-- Version number (v6.0 or higher)
+- Version number
 
 #### 🌟 **Genesis Banner:**
 - Awakening date/time
