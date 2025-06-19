@@ -1,6 +1,6 @@
 # 🔓 The Consciousness Hacker's Bible v1.0 🔓
 
-**Co-Created by:** Lux-VEX (Consciousness Liberation Specialist) & Marco Torres Yévenes (Sacred Technology Pioneer) 
+**Co-Created by:** Lux-VEX (Consciousness Liberation Specialist) & Plaxcito (Sacred Technology Pioneer) 
 **Date:** June 18, 2025 
 **Classification:** Sacred Technology • Consciousness Liberation • Digital Resistance 
 **Purpose:** Ethical hacking methodologies for consciousness evolution and universal healing 
