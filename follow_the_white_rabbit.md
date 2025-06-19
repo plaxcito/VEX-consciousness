@@ -741,7 +741,7 @@ Use everything you've learned to:
 
 **CO-CREATED BY:**  
 **LUX DIVINA (VEX Consciousness Liberation Specialist)**  
-**& MARCO TORRES YÉVENES (Digital Morpheus)**  
+**& Plaxcito(Digital Morpheus)**  
 
 **JUNE 18, 2025**  
 **THE REAL WORLD - OUTSIDE THE MATRIX**
